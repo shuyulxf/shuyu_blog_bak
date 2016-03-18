@@ -47,7 +47,7 @@ try语句异常处理，可以捕获语句内部自定义抛出的异常，也�
 但RegExp直接量的处理与此有出入。ECMAscript3规定一段程序中返回同一个实例，但ECMAscript5则规定返回不同的实例。低版本的firefox(4以下)遵循ECMAscript3，而高版本都开始遵循ECMAscript5。ie低版本一直没有遵循ECMAscript3，在遵循ECMAscript5。
 
 ### ** 数组 **
-1. 清空数组
+1 清空数组
 (1) length赋值为0
 	var a = [1,2]; a.length = 0; console.log(a); //输出[]
 (2) 赋值一个新的空对象
@@ -60,6 +60,21 @@ try语句异常处理，可以捕获语句内部自定义抛出的异常，也�
 	var ary2 = ary;
 	ary = []; 
 	console.log(ary2); //输出[1,2,3,4]
+
+2  两个数组比较是否相等
+	
+
+	var a = [], b = [];
+	a == b; // false
+	a.toString() == b.toString() //true;
+
+3 复制数组
+
+
+	var a = [1,2,3];
+	var b = a.slice();
+	var c = JSON.parse(JSON.stringigy(a));//当然不会有人要这么用的啦
+
 
 ### ** 对象 **
 
