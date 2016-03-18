@@ -61,6 +61,16 @@ try语句异常处理，可以捕获语句内部自定义抛出的异常，也�
 	ary = []; 
 	console.log(ary2); //输出[1,2,3,4]
 
+### ** 对象 **
+
+	function node(k){
+		this.val = k;
+		this.next = null;
+	}
+	var a = new node(1); a.next = new node(2);
+	var b = a; b = a.next; // a为{val:1,next:{val:2, next:null}}
+	var b = a; b.next = null; //a为{val:1, next: null}
+
 
 
 
