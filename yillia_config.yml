@@ -56,10 +56,10 @@ weixin:
 # Miscellaneous
 baidu_analytics: ''
 google_analytics: ''
-favicon: /favicon.png
+favicon: /img/favicon.ico
 
 #你的头像url
-avatar:
+avatar: /img/logo.jpg
 
 #是否开启分享
 share_jia: true
